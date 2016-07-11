@@ -996,10 +996,9 @@ Line: 1 Col: 64 Unexpected end tag (noscript).
 | <!DOCTYPE html>
 | <html>
 |   <head>
-|     <noscript>
-|       "<!--<noscript>"
 |   <body>
-|     "-->"
+|     <noscript>
+|       <!-- <noscript></noscript> -->
 
 #data
 <!doctype html><noscript><!--</noscript>X<noscript>--></noscript>
@@ -1008,12 +1007,9 @@ Line: 1 Col: 64 Unexpected end tag (noscript).
 | <!DOCTYPE html>
 | <html>
 |   <head>
-|     <noscript>
-|       "<!--"
 |   <body>
-|     "X"
 |     <noscript>
-|       "-->"
+|       <!-- </noscript>X<noscript> -->
 
 #data
 <!doctype html><noscript><iframe></noscript>X
@@ -1022,10 +1018,10 @@ Line: 1 Col: 64 Unexpected end tag (noscript).
 | <!DOCTYPE html>
 | <html>
 |   <head>
-|     <noscript>
-|       "<iframe>"
 |   <body>
-|     "X"
+|     <noscript>
+|       <iframe>
+|         "</noscript>X"
 
 #data
 <!doctype html><noframes><!--<noframes></noframes>--></noframes>
@@ -2121,10 +2117,9 @@ Line: 1 Col: 49 Unexpected end tag (noscript).
 #document
 | <html>
 |   <head>
-|     <noscript>
-|       "<!--<noscript>"
 |   <body>
-|     "-->"
+|     <noscript>
+|       <!-- <noscript></noscript> -->
 
 #data
 <noscript><!--</noscript>X<noscript>--></noscript>
@@ -2133,12 +2128,9 @@ Line: 1 Col: 10 Unexpected start tag (noscript). Expected DOCTYPE.
 #document
 | <html>
 |   <head>
-|     <noscript>
-|       "<!--"
 |   <body>
-|     "X"
 |     <noscript>
-|       "-->"
+|       <!-- </noscript>X<noscript> -->
 
 #data
 <noscript><iframe></noscript>X
@@ -2147,10 +2139,10 @@ Line: 1 Col: 10 Unexpected start tag (noscript). Expected DOCTYPE.
 #document
 | <html>
 |   <head>
-|     <noscript>
-|       "<iframe>"
 |   <body>
-|     "X"
+|     <noscript>
+|       <iframe>
+|         "</noscript>X"
 
 #data
 <noframes><!--<noframes></noframes>--></noframes>

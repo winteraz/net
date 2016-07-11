@@ -582,7 +582,7 @@ func inHeadIM(p *parser) bool {
 			p.oe.pop()
 			p.acknowledgeSelfClosingTag()
 			return true
-		case a.Script, a.Title, a.Noscript, a.Noframes, a.Style:
+		case a.Script, a.Title, a.Noframes, a.Style:
 			p.addElement()
 			p.setOriginalIM()
 			p.im = textIM

@@ -185,7 +185,6 @@ Line: 1 Col: 10 Unexpected start tag (noscript). Expected DOCTYPE.
 #document
 | <html>
 |   <head>
-|     <noscript>
-|       "<!--"
 |   <body>
-|     "-->"
+|     <noscript>
+|       <!-- </noscript> -->
